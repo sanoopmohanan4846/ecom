@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Update Your Profile</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Welcome To Ecom...</p>
+        </div>
+    </div>
+</header>
+<br><br><br><br><br>
+<div class="container">
+    <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <strong>Billing information</strong>
+                <form method="POST" action="{% url 'update_info' %}">
+                    {% csrf_token %}
+                    
+                    {{ form.as_p }}
+                    <br/><br/>
+                    <strong>Shipping Information</strong>
+                    <br/><br/>
+                    
+                    {{ shipping_form.as_p }}
+                
+
+                    <button type="submit" class="btn btn-secondary">Update</button>
+
+                  </form>
+                    
+                  <br><br>
+            </div>
+    </div>
+</div>
+<br><br><br><br><br>
+
+
+
+{% endblock %}
