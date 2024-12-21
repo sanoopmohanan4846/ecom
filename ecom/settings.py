@@ -29,8 +29,8 @@ SECRET_KEY = 'django-insecure-wvc*5*%_(di1fx!*e+824b!@8u9kknu&i*2cl9$ovxwj)3g480
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['web-production-46a5f.up.railway.app', 'https://web-production-46a5f.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['web-production-46a5f.up.railway.app', 'https://web-production-46a5f.up.railway.app']
+# ALLOWED_HOSTS = ['web-production-46a5f.up.railway.app', 'https://web-production-46a5f.up.railway.app']
+# CSRF_TRUSTED_ORIGINS = ['web-production-46a5f.up.railway.app', 'https://web-production-46a5f.up.railway.app']
 
 
 # Application definition
@@ -110,9 +110,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',  # Database name
         'USER': 'postgres',  # Username
-        'PASSWORD': 'bafJGjuTCGobJEommLxKAJmeIQRAklCq',  # Password
-        'HOST': 'autorack.proxy.rlwy.net',  # Host
-        'PORT': '17788',  # Port
+        'PASSWORD': 'nbOgJNaRXkZJvXtSXyOuBLxcMIPobASw',  # Password
+        'HOST': 'junction.proxy.rlwy.net',  # Extracted host
+        'PORT': '50699',  # Extracted port
     }
 }
 
